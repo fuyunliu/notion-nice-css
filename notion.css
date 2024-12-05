@@ -1,0 +1,374 @@
+#nice {
+  line-height: 1.25;
+  font-family: Optima-Regular, "PingFang SC", "Microsoft YaHei", sans-serif;
+  letter-spacing: 2px;
+}
+
+#nice p {
+  margin: 10px 0px;
+  letter-spacing: 2px;
+  font-size: 15px;
+  word-spacing: 2px;
+}
+
+/* 一级标题 */
+#nice h1 {
+  font-size: 25px;
+}
+
+/* 一级标题内容 */
+#nice h1 .content {
+  display: inline-block;
+  font-weight: bold;
+  color: #773098;
+}
+
+/* 一级标题前缀 */
+#nice h1 .prefix {
+  content: url("https://zycs-img-97r.pages.dev/v2/ZCTHWHx.png");
+  display: inline-block;
+  width: 1em; /* 图片的宽度设为大约与文字相等的大小 */
+  height: auto; /* 自动调整高度以保持宽高比 */
+  margin-right: 10px; /* 设置图片与标题之间的间距 */
+  vertical-align: middle; /* 保持图片和文字的垂直对齐 */
+}
+
+/* 一级标题后缀 */
+#nice h1 .suffix {
+}
+
+/* 二级标题 */
+#nice h2 {
+  text-align: left;
+  margin: 20px 10px 0px 0px;
+}
+
+/* 二级标题内容 */
+#nice h2 .content {
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-block;
+  padding-left: 10px;
+  border-left: 5px solid #916dd5;
+}
+
+/* 二级标题前缀 */
+#nice h2 .prefix {
+}
+
+/* 二级标题后缀 */
+#nice h2 .suffix {
+}
+
+/* 三级标题 */
+#nice h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* 三级标题内容 */
+#nice h3 .content {
+  /* border-bottom: 2px solid #d89cf6; */
+  background-image: url("https://zycs-img-97r.pages.dev/v2/eHUMYNX.png");
+}
+
+/* 三级标题前缀 */
+#nice h3 .prefix {
+}
+
+/* 三级标题后缀 */
+#nice h3 .suffix {
+}
+
+/* 无序列表整体样式
+ * list-style-type: square|circle|disc;
+ */
+#nice ul {
+  font-size: 15px;
+  list-style-type: circle;
+}
+
+/* 有序列表整体样式
+ * list-style-type: upper-roman|lower-greek|lower-alpha;
+ */
+#nice ol {
+  font-size: 15px;
+}
+
+/* 列表内容，不要设置li
+ */
+#nice li section {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* 一级引用
+ * 左边缘颜色 border-left-color: #6a737d;
+ * 背景色 background: rgba(0, 0, 0, 0.05);
+ */
+#nice blockquote {
+}
+
+/* 一级引用文字 */
+#nice blockquote p {
+}
+
+/* 链接 
+ * border-bottom: 1px solid #009688;
+ */
+#nice a {
+  color: #916dd5;
+  font-weight: bolder;
+  border-bottom: 1px solid #916dd5;
+}
+
+/* 加粗 */
+#nice strong {
+  color: #916dd5;
+  font-weight: bold;
+}
+
+/* 斜体 */
+#nice em {
+  font-style: normal;
+  color: #916dd5;
+}
+
+/* 加粗斜体 */
+#nice em strong {
+  color: #916dd5;
+}
+
+/* 删除线 */
+#nice del {
+  color: #916dd5;
+}
+
+/* 分隔线
+ * 粗细、样式和颜色
+ * border-top: 1px solid #3e3e3e;
+ */
+#nice hr {
+  height: 1px;
+  padding: 0;
+  border: none;
+  border-top: 2px solid #d9b8fa;
+}
+
+/* 
+ * 代码块不换行 display: -webkit-box !important;
+ * 代码块换行 display: block;
+ */
+#nice pre code {
+  font-family: "JetBrains Mono";
+}
+
+/* 行内代码 */
+#nice blockquote code,
+#nice p code,
+#nice li code {
+  color: #916dd5;
+  font-weight: bolder;
+  background: none;
+}
+
+/* 图片
+ * 宽度 width: 80%;
+ * 居中 margin: 0 auto;
+ * 居左 margin: 0 0;
+ */
+#nice img {
+  border-radius: 6px;
+  display: block;
+  margin: 20px auto;
+  object-fit: contain;
+  box-shadow: 2px 4px 7px #999;
+}
+
+/* 图片容器
+ * 上边距 margin-top: 10px;
+ * 下边距 margin-bottom: 10px
+ */
+#nice figure {
+}
+
+/* 图片描述 Caption */
+#nice figcaption {
+  display: block;
+  font-size: 13px;
+}
+
+/*
+* 表格内的单元格
+* 字体大小 font-size: 16px;
+* 边框 border: 1px solid #ccc;
+* 内边距 padding: 5px 10px;
+*/
+#nice table tr th,
+#nice table tr td {
+  font-size: 14px;
+}
+
+/* 
+* 某一列表格列宽控制
+* n 可以修改为具体数字，不修改时表示所有列
+* 最小列宽 min-width: 85px;
+*/
+#nice table tr th:nth-of-type(n),
+#nice table tr td:nth-of-type(n) {
+}
+
+#nice .footnotes {
+  font-size: 14px;
+}
+
+/* 脚注文字 */
+#nice .footnote-word {
+  font-weight: normal;
+  color: #916dd5;
+  font-weight: bold;
+}
+
+/* 脚注上标 */
+#nice .footnote-ref {
+  font-weight: normal;
+  color: #916dd5;
+}
+
+/* "参考资料"四个字 
+ * 内容 content: "参考资料";
+ */
+#nice .footnotes-sep:before {
+  font-size: 20px;
+}
+
+/* 参考资料编号 */
+#nice .footnote-num {
+  color: #916dd5;
+}
+
+/* 脚注链接样式 */
+#nice .footnote-item em {
+  font-size: 14px;
+  color: #916dd5;
+  display: block;
+}
+
+/* 参考资料文字 */
+#nice .footnote-item p {
+  color: #916dd5;
+  font-weight: bold;
+}
+
+/* 参考资料解释 */
+#nice .footnote-item p em {
+  font-weight: normal;
+}
+
+/* Callout */
+#nice .callout {
+  position: relative;
+  overflow: visible;
+}
+
+#nice .callout::after {
+  content: ""; /* 使用空内容 */
+  background-image: url("https://zycs-img-97r.pages.dev/v2/G0ql3Jc.png"); /* 替换为你的图片路径 */
+  position: absolute;
+  top: -20px; /* 定位到顶部 */
+  right: 0; /* 定位到右边 */
+  width: 60px; /* 调整图片大小 */
+  height: 60px; /* 自动调整高度保持比例 */
+  transform: scaleX(-1); /* 翻转图片180度 */
+  background-size: contain; /* 确保图片适应容器 */
+  background-repeat: no-repeat; /* 防止图片重复 */
+  background-position: center; /* 确保图片居中 */
+}
+
+/* Mention */
+#nice .mention {
+}
+
+/* 行间公式
+  * 最大宽度 max-width: 300% !important;
+  */
+#nice .block-equation svg {
+}
+
+/* 行内公式
+  */
+#nice .inline-equation svg {
+}
+
+/* Gray字体色 */
+#nice .h_gray {
+}
+
+/* Brown字体色 */
+#nice .h_brown {
+}
+
+/* Orange字体色 */
+#nice .h_orange {
+}
+
+/* Yellow字体色 */
+#nice .h_yellow {
+}
+
+/* Green字体色 */
+#nice .h_teal {
+}
+
+/* Blue字体色 */
+#nice .h_blue {
+}
+
+/* Purple字体色 */
+#nice .h_purple {
+}
+
+/* Pink字体色 */
+#nice .h_pink {
+}
+
+/* Red字体色 */
+#nice .h_red {
+}
+
+/* Gray背景色 */
+#nice .h_gray_background {
+}
+
+/* Brown背景色 */
+#nice .h_brown_background {
+}
+
+/* Orange背景色 */
+#nice .h_orange_background {
+}
+
+/* Yellow背景色 */
+#nice .h_yellow_background {
+}
+
+/* Green背景色 */
+#nice .h_teal_background {
+}
+
+/* Blue背景色 */
+#nice .h_blue_background {
+}
+
+/* Purple背景色 */
+#nice .h_purple_background {
+}
+
+/* Pink背景色 */
+#nice .h_pink_background {
+}
+
+/* Red背景色 */
+#nice .h_red_background {
+}
