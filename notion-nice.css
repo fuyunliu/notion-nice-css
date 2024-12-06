@@ -1,36 +1,57 @@
+/*
+彩虹
+https://zycs-img-97r.pages.dev/v2/ZCTHWHx.png
+一级标题花花
+https://zycs-img-97r.pages.dev/v2/NiI1Ecl.png
+涂鸦
+https://zycs-img-97r.pages.dev/v2/eHUMYNX.png
+小草
+https://zycs-img-97r.pages.dev/v2/dulJgC4.png
+心心
+https://zycs-img-97r.pages.dev/v2/g3qPZSg.png
+三级标题花花
+https://zycs-img-97r.pages.dev/v2/hMyYORj.png
+*/
+
 #nice {
-  line-height: 1.25;
-  font-family: Optima-Regular, "PingFang SC", "Microsoft YaHei", sans-serif;
+  line-height: 1.5;
+  font-family: Optima-Regular, PingFangTC-Light, PingFangSC-Light;
   letter-spacing: 2px;
 }
 
 #nice p {
+  color: #533b3c;
   margin: 10px 0px;
-  letter-spacing: 2px;
   font-size: 15px;
+  text-align: justify;
+  letter-spacing: 2px;
   word-spacing: 2px;
 }
 
 /* 一级标题 */
 #nice h1 {
-  font-size: 25px;
+  font-size: 22px;
 }
 
 /* 一级标题内容 */
 #nice h1 .content {
   display: inline-block;
   font-weight: bold;
-  color: #773098;
+  color: #93c6bc;
 }
 
 /* 一级标题前缀 */
 #nice h1 .prefix {
-  content: url("https://zycs-img-97r.pages.dev/v2/ZCTHWHx.png");
+  content: "";
+  background-image: url("https://zycs-img-97r.pages.dev/v2/NiI1Ecl.png");
+  width: 1em;
+  height: 2em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   display: inline-block;
-  width: 1em; /* 图片的宽度设为大约与文字相等的大小 */
-  height: auto; /* 自动调整高度以保持宽高比 */
-  margin-right: 10px; /* 设置图片与标题之间的间距 */
-  vertical-align: middle; /* 保持图片和文字的垂直对齐 */
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
 /* 一级标题后缀 */
@@ -39,17 +60,28 @@
 
 /* 二级标题 */
 #nice h2 {
-  text-align: left;
-  margin: 20px 10px 0px 0px;
+  font-size: 18px;
+  border-bottom: 2px solid rgb(239, 112, 96);
 }
 
 /* 二级标题内容 */
 #nice h2 .content {
-  font-size: 18px;
   font-weight: bold;
   display: inline-block;
-  padding-left: 10px;
-  border-left: 5px solid #916dd5;
+  background: rgb(239, 112, 96);
+  color: #ffffff;
+  padding: 3px 10px 1px;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  margin-right: 3px;
+}
+
+#nice h2::after {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  border-bottom: 26px solid #efebe9;
+  border-right: 14px solid transparent;
 }
 
 /* 二级标题前缀 */
@@ -69,8 +101,19 @@
 
 /* 三级标题内容 */
 #nice h3 .content {
-  /* border-bottom: 2px solid #d89cf6; */
+  padding: 10px;
+  color: #ffa9a9;
+  display: inline-block;
   background-image: url("https://zycs-img-97r.pages.dev/v2/eHUMYNX.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-shadow: rgb(255, 255, 255) 0px 1px, rgb(255, 255, 255) 0px -1px,
+    rgb(255, 255, 255) 1px 1px, rgb(255, 255, 255) 1px 0px,
+    rgb(255, 255, 255) 1px -1px, rgb(255, 255, 255) -1px 1px,
+    rgb(255, 255, 255) -1px 0px, rgb(255, 255, 255) -1px -1px,
+    rgb(255, 169, 169) 0px 2px, rgb(255, 169, 169) 1px 2px,
+    rgb(255, 169, 169) -1px 2px;
 }
 
 /* 三级标题前缀 */
@@ -79,6 +122,16 @@
 
 /* 三级标题后缀 */
 #nice h3 .suffix {
+  content: "";
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  background-image: url("https://zycs-img-97r.pages.dev/v2/hMyYORj.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  vertical-align: middle;
+  transform: rotateZ(18deg);
 }
 
 /* 无序列表整体样式
@@ -161,7 +214,7 @@
  * 代码块换行 display: block;
  */
 #nice pre code {
-  font-family: "JetBrains Mono";
+  /* font-family: "JetBrains Mono"; */
 }
 
 /* 行内代码 */
@@ -268,22 +321,22 @@
 
 /* Callout */
 #nice .callout {
-  position: relative;
+  padding: 12px;
   overflow: visible;
 }
 
-#nice .callout::after {
-  content: ""; /* 使用空内容 */
-  background-image: url("https://zycs-img-97r.pages.dev/v2/G0ql3Jc.png"); /* 替换为你的图片路径 */
-  position: absolute;
-  top: -20px; /* 定位到顶部 */
-  right: 0; /* 定位到右边 */
-  width: 60px; /* 调整图片大小 */
-  height: 60px; /* 自动调整高度保持比例 */
-  transform: scaleX(-1); /* 翻转图片180度 */
-  background-size: contain; /* 确保图片适应容器 */
-  background-repeat: no-repeat; /* 防止图片重复 */
-  background-position: center; /* 确保图片居中 */
+#nice .callout.h_blue_background::before {
+  content: "";
+  float: right;
+  width: 60px;
+  height: 60px;
+  margin-top: -30px;
+  margin-right: -12px;
+  background-image: url("https://zycs-img-97r.pages.dev/v2/G0ql3Jc.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transform: scaleX(-1);
 }
 
 /* Mention */
