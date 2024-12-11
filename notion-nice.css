@@ -11,6 +11,10 @@ https://zycs-img-97r.pages.dev/v2/dulJgC4.png
 https://zycs-img-97r.pages.dev/v2/g3qPZSg.png
 三级标题花花
 https://zycs-img-97r.pages.dev/v2/hMyYORj.png
+蓝色花
+https://zycs-img-97r.pages.dev/v2/3Cv3K8O.png
+梅花
+https://zycs-img-97r.pages.dev/v2/34ucW8X.png
 */
 
 #nice {
@@ -99,39 +103,37 @@ https://zycs-img-97r.pages.dev/v2/hMyYORj.png
   text-align: center;
 }
 
-/* 三级标题内容 */
+/* 三级标题内容
+荷花：hMyYORj,ffa9a9
+梅花：34ucW8X,994c23
+*/
 #nice h3 .content {
-  padding: 10px;
+  /* padding: 10px; */
   color: #ffa9a9;
   display: inline-block;
-  background-image: url("https://zycs-img-97r.pages.dev/v2/eHUMYNX.png");
+  /* background-image: url("https://zycs-img-97r.pages.dev/v2/eHUMYNX.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  background-position: center;
-  text-shadow: rgb(255, 255, 255) 0px 1px, rgb(255, 255, 255) 0px -1px,
-    rgb(255, 255, 255) 1px 1px, rgb(255, 255, 255) 1px 0px,
-    rgb(255, 255, 255) 1px -1px, rgb(255, 255, 255) -1px 1px,
-    rgb(255, 255, 255) -1px 0px, rgb(255, 255, 255) -1px -1px,
-    rgb(255, 169, 169) 0px 2px, rgb(255, 169, 169) 1px 2px,
-    rgb(255, 169, 169) -1px 2px;
+  background-position: center; */
 }
 
 /* 三级标题前缀 */
 #nice h3 .prefix {
+  content: "";
+  width: 2em;
+  height: 2em;
+  margin-right: 10px;
+  display: inline-block;
+  background-image: url("https://zycs-img-97r.pages.dev/v2/hMyYORj.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+  transform: rotateZ(18deg);
 }
 
 /* 三级标题后缀 */
 #nice h3 .suffix {
-  content: "";
-  display: inline-block;
-  width: 2em;
-  height: 2em;
-  background-image: url("https://zycs-img-97r.pages.dev/v2/hMyYORj.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: left;
-  vertical-align: middle;
-  transform: rotateZ(18deg);
 }
 
 /* 无序列表整体样式
