@@ -1,0 +1,71 @@
+#nice h1 {
+  font-size: 22px;
+}
+#nice h1 .content {
+  color: #93c6bc;
+  font-weight: 700;
+  display: inline-block;
+}
+#nice h1 .prefix {
+  content: "";
+  vertical-align: middle;
+  background-image: url(https://zycs-img-97r.pages.dev/v2/NiI1Ecl.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1em;
+  height: 2em;
+  margin-right: 10px;
+  display: inline-block;
+}
+#nice h2 {
+  border-bottom: 2px solid #ef7060;
+  font-size: 18px;
+}
+#nice h2 .content {
+  color: #fff;
+  background: #ef7060;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  margin-right: 3px;
+  padding: 3px 10px 1px;
+  font-weight: 700;
+  display: inline-block;
+}
+#nice h2:after {
+  content: "";
+  vertical-align: bottom;
+  border-bottom: 26px solid #efebe9;
+  border-right: 14px solid #0000;
+  display: inline-block;
+}
+#nice h3 {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+#nice h3 .content {
+  color: #ffa9a9;
+  text-shadow: 0 1px #fff, 0 -1px #fff, 1px 1px #fff, 1px 0 #fff, 1px -1px #fff,
+    -1px 1px #fff, -1px 0 #fff, -1px -1px #fff, 0 2px #ffa9a9, 1px 2px #ffa9a9,
+    -1px 2px #ffa9a9;
+  background-image: url(https://zycs-img-97r.pages.dev/v2/eHUMYNX.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 10px;
+  display: inline-block;
+}
+#nice h3 .suffix {
+  content: "";
+  vertical-align: middle;
+  background-image: url(https://zycs-img-97r.pages.dev/v2/hMyYORj.png);
+  background-position: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 2em;
+  height: 2em;
+  display: inline-block;
+  transform: rotate(18deg);
+}
+/*# sourceMappingURL=main.css.map */

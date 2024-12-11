@@ -1,0 +1,34 @@
+/* 二级标题 */
+#nice h2 {
+    font-size: 18px;
+    border-bottom: 2px solid rgb(239, 112, 96);
+  }
+  
+  /* 二级标题内容 */
+  #nice h2 .content {
+    font-weight: bold;
+    display: inline-block;
+    background: rgb(239, 112, 96);
+    color: #ffffff;
+    padding: 3px 10px 1px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    margin-right: 3px;
+  }
+  
+  #nice h2::after {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    border-bottom: 26px solid #efebe9;
+    border-right: 14px solid transparent;
+  }
+  
+  /* 二级标题前缀 */
+  #nice h2 .prefix {
+  }
+  
+  /* 二级标题后缀 */
+  #nice h2 .suffix {
+  }
+  

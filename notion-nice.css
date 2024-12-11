@@ -14,9 +14,9 @@ https://zycs-img-97r.pages.dev/v2/hMyYORj.png
 */
 
 #nice {
-  line-height: 1.5;
-  font-family: Optima-Regular, PingFangTC-Light, PingFangSC-Light;
+  line-height: 1.75;
   letter-spacing: 2px;
+  font-family: PingFangSC-Light;
 }
 
 #nice p {
@@ -139,7 +139,23 @@ https://zycs-img-97r.pages.dev/v2/hMyYORj.png
  */
 #nice ul {
   font-size: 15px;
+  list-style-type: disc;
+}
+
+#nice ul ul {
+  list-style-type: square;
+}
+
+#nice ul ul ul {
   list-style-type: circle;
+}
+
+#nice ul.to_do_list {
+  list-style-type: none;
+}
+
+#nice ul.to_do_list:not(ul.to_do_list ul.to_do_list) {
+  padding: 0;
 }
 
 /* 有序列表整体样式
@@ -147,6 +163,19 @@ https://zycs-img-97r.pages.dev/v2/hMyYORj.png
  */
 #nice ol {
   font-size: 15px;
+  list-style-type: decimal;
+}
+
+#nice ol ol {
+  list-style-type: lower-alpha;
+}
+
+#nice ol ol ol {
+  list-style-type: lower-roman;
+}
+
+#nice ol ol ol ol {
+  list-style-type: lower-greek;
 }
 
 /* 列表内容，不要设置li
@@ -160,7 +189,29 @@ https://zycs-img-97r.pages.dev/v2/hMyYORj.png
  * 左边缘颜色 border-left-color: #6a737d;
  * 背景色 background: rgba(0, 0, 0, 0.05);
  */
-#nice blockquote {
+#nice blockquote:not(.callout) {
+  padding: 36px;
+  text-align: justify;
+  border-left: none;
+  border-radius: 4px;
+}
+
+#nice blockquote:not(.callout)::before {
+  content: "“";
+  float: left;
+  font-size: 36px;
+  font-weight: bold;
+  margin-left: -36px;
+  margin-top: -36px;
+}
+
+#nice blockquote:not(.callout)::after {
+  content: "”";
+  float: right;
+  font-size: 36px;
+  font-weight: bold;
+  margin-right: -36px;
+  margin-bottom: -36px;
 }
 
 /* 一级引用文字 */

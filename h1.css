@@ -1,0 +1,30 @@
+/* 一级标题 */
+#nice h1 {
+    font-size: 22px;
+  }
+  
+  /* 一级标题内容 */
+  #nice h1 .content {
+    display: inline-block;
+    font-weight: bold;
+    color: #93c6bc;
+  }
+  
+  /* 一级标题前缀 */
+  #nice h1 .prefix {
+    content: "";
+    background-image: url("https://zycs-img-97r.pages.dev/v2/NiI1Ecl.png");
+    width: 1em;
+    height: 2em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  /* 一级标题后缀 */
+  #nice h1 .suffix {
+  }
+  
