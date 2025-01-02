@@ -1,30 +1,7 @@
-/*
-彩虹
-https://zycs-img-97r.pages.dev/v2/ZCTHWHx.png
-荷花
-https://zycs-img-97r.pages.dev/v2/NiI1Ecl.png
-涂鸦
-https://zycs-img-97r.pages.dev/v2/eHUMYNX.png
-小草
-https://zycs-img-97r.pages.dev/v2/dulJgC4.png
-心心
-https://zycs-img-97r.pages.dev/v2/g3qPZSg.png
-荷花
-https://zycs-img-97r.pages.dev/v2/hMyYORj.png
-蓝花
-https://zycs-img-97r.pages.dev/v2/3Cv3K8O.png
-梅花
-https://zycs-img-97r.pages.dev/v2/34ucW8X.png
-https://zycs-img-97r.pages.dev/v2/qgEd5dR.png
-https://zycs-img-97r.pages.dev/v2/wbqaI05.png
-https://zycs-img-97r.pages.dev/v2/0uj4xQM.png
-https://zycs-img-97r.pages.dev/v2/VjMfjNX.png
-*/
-
 #nice {
   line-height: 1.75;
   letter-spacing: 2px;
-  font-family: "Noto Sans CJK SC", PingFangSC-Light;
+  font-family: PingFangSC-Light;
 }
 
 #nice p {
@@ -43,9 +20,10 @@ https://zycs-img-97r.pages.dev/v2/VjMfjNX.png
 
 /* 一级标题内容 */
 #nice h1 .content {
-  display: inline-block;
-  font-weight: bold;
   color: #93c6bc;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /* 一级标题前缀 */
@@ -74,9 +52,10 @@ https://zycs-img-97r.pages.dev/v2/VjMfjNX.png
 
 /* 二级标题内容 */
 #nice h2 .content {
+  color: #994c23;
   font-weight: bold;
   display: inline-block;
-  color: #994c23;
+  vertical-align: middle;
 }
 
 /* 二级标题前缀 */
@@ -113,6 +92,7 @@ https://zycs-img-97r.pages.dev/v2/VjMfjNX.png
 #nice h3 .content {
   color: #ffa9a9;
   display: inline-block;
+  vertical-align: middle;
 }
 
 /* 三级标题前缀 */
@@ -132,6 +112,16 @@ https://zycs-img-97r.pages.dev/v2/VjMfjNX.png
 
 /* 三级标题后缀 */
 #nice h3 .suffix {
+  content: "";
+  width: 4em;
+  height: 4em;
+  margin-left: 10px;
+  display: inline-block;
+  background-image: url("https://zycs-img-97r.pages.dev/v2/Ih3nDsl.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
 }
 
 /* 无序列表整体样式
@@ -260,7 +250,7 @@ https://zycs-img-97r.pages.dev/v2/VjMfjNX.png
  * 代码块换行 display: block;
  */
 #nice pre code {
-  font-family: "JetBrains Mono";
+  font-family: "JetBrains Mono", Menlo, Consolas, monospace;
 }
 
 /* 行内代码 */
@@ -380,6 +370,20 @@ https://zycs-img-97r.pages.dev/v2/VjMfjNX.png
   height: 60px;
   margin-top: -30px;
   margin-right: -12px;
+  background-image: url("https://zycs-img-97r.pages.dev/v2/jSR65Bq.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transform: scaleY(-1);
+}
+
+#nice .callout.h_teal_background::before {
+  content: "";
+  float: right;
+  width: 60px;
+  height: 60px;
+  margin-top: -30px;
+  margin-right: -12px;
   background-image: url("https://zycs-img-97r.pages.dev/v2/G0ql3Jc.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -408,11 +412,39 @@ https://zycs-img-97r.pages.dev/v2/VjMfjNX.png
   height: 60px;
   margin-top: -30px;
   margin-right: -12px;
-  background-image: url("https://zycs-img-97r.pages.dev/v2/VjMfjNX.png");
+  background-image: url("https://zycs-img-97r.pages.dev/v2/vTNMUXQ.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+#nice .callout.h_pink_background::before {
+  content: "";
+  float: right;
+  width: 60px;
+  height: 60px;
+  margin-top: -30px;
+  margin-right: -12px;
+  background-image: url("https://zycs-img-97r.pages.dev/v2/ZCTHWHx.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   transform: scaleX(-1);
+}
+
+#nice .callout.h_gray_background {
+  background: none;
+  background-image: url("https://zycs-img-97r.pages.dev/v2/3WVZQPl.png");
+  background-repeat: repeat-y;
+  background-attachment: scroll;
+  background-size: 100%;
+  background-position: 0% 0%;
+
+  background-clip: padding-box;
+  border-bottom: 30px solid transparent;
+  border-image: url("https://zycs-img-97r.pages.dev/v2/uvzJQly.png") 0 0 100 0; /* 微信公众号保存时会把这个属性移除 */
+  -webkit-border-image: url("https://zycs-img-97r.pages.dev/v2/uvzJQly.png") 0 0 100 0; /* 微信公众号保存时会把这个属性移除 */;
+}
 }
 
 /* Mention */
