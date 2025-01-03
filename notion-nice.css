@@ -439,12 +439,20 @@
   background-attachment: scroll;
   background-size: 100%;
   background-position: 0% 0%;
-
-  background-clip: padding-box;
-  border-bottom: 30px solid transparent;
-  border-image: url("https://zycs-img-97r.pages.dev/v2/uvzJQly.png") 0 0 100 0; /* 微信公众号保存时会把这个属性移除 */
-  -webkit-border-image: url("https://zycs-img-97r.pages.dev/v2/uvzJQly.png") 0 0 100 0; /* 微信公众号保存时会把这个属性移除 */;
 }
+
+#nice .callout.h_gray_background::before {
+  content: "";
+  float: right;
+  width: 24px;
+  height: 35px;
+  margin-top: -24px;
+  margin-right: 0px;
+  background-image: url("https://zycs-img-97r.pages.dev/v2/tt3A21p.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  /* transform: scaleX(-1); */
 }
 
 /* Mention */
