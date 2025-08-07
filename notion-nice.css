@@ -11,6 +11,7 @@
   text-align: justify;
   letter-spacing: 2px;
   word-spacing: 2px;
+  clear: none;
 }
 
 /* 一级标题 */
